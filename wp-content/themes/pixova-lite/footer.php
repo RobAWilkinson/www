@@ -55,24 +55,7 @@
 $footer_copyright = get_theme_mod('pixova_lite_copyright', sprintf('&copy; %s', __('Copyright 20', 'pixova-lite') . date( 'y' ) . __('. All rights reserved.', 'pixova-lite') ) );
 
 
-if( isset( $footer_copyright ) ) { ?>
-<div class="fluid-container">
-<div class="footer-copyright-container">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="text-center">
-                <p class="footer-copyright">
-                    <?php _e('Theme:', 'pixova-lite'); ?> <a href="<?php echo esc_url( __( 'http://www.machothemes.com/themes/pixova-lite/', 'pixova-lite') ); ?>" target="_blank" rel="nofollow" title="Free One Page Parallax WordPress Theme"><?php _e('Pixova Lite', 'pixova-lite'); ?></a>
-                    &middot;
-                    <?php _e('Made with love by','pixova-lite'); ?> <?php _e('Macho Themes', 'pixova-lite'); ?>
-                    <?php echo esc_html($footer_copyright); ?>
-                </p>
-            </div><!--/.text-center-->
-        </div><!--/col-lg-12-->
-    </div><!--/.row-->
-    </div><!--/.footer-copyright-container-->
-</div><!--/.fluid-container-->
-<?php }  ?>
+?>
 
 </footer>
 </div><!-- #page -->

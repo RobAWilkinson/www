@@ -6,11 +6,11 @@ $pixova_lite_main_cta_button_text = get_theme_mod('pixova_lite_intro_button_text
 $pixova_lite_main_cta_button_url = get_theme_mod('pixova_lite_intro_button_url', 'http://www.machothemes.com/themes/pixova-lite/');
 
 $pixova_lite_what_we_do_1 = get_theme_mod('pixova_lite_intro_what_we_do_1_title', __('Web design', 'pixova-lite') );
-$pixova_lite_what_we_do_1_description = get_theme_mod('pixova_lite_intro_what_we_do_1_description', __('Lorem ipsum dolor sit amet. Lorem ipsum.', 'pixova-lite') );
+$pixova_lite_what_we_do_1_description = get_theme_mod('pixova_lite_intro_what_we_do_1_description', __('$pixova_lite_what_we_do_1_description', 'pixova-lite') );
 $pixova_lite_what_we_do_2 = get_theme_mod('pixova_lite_intro_what_we_do_2_title', __('Development', 'pixova-lite') );
-$pixova_lite_what_we_do_2_description = get_theme_mod('pixova_lite_intro_what_we_do_2_description', __('Lorem ipsum dolor sit amet. Lorem ipsum.', 'pixova-lite') );
+$pixova_lite_what_we_do_2_description = get_theme_mod('pixova_lite_intro_what_we_do_2_description', __('$pixova_lite_what_we_do_2_description') );
 $pixova_lite_what_we_do_3 = get_theme_mod('pixova_lite_intro_what_we_do_3_title', __('Print design', 'pixova-lite') );
-$pixova_lite_what_we_do_3_description = get_theme_mod('pixova_lite_intro_what_we_do_3_description', __('Lorem ipsum dolor sit amet. Lorem ipsum.', 'pixova-lite') );
+$pixova_lite_what_we_do_3_description = get_theme_mod('pixova_lite_intro_what_we_do_3_description', __('$pixova_lite_what_we_do_3_description', 'pixova-lite') );
 
 
 echo '<section id="intro" class="home-intro" >';

@@ -1,6 +1,6 @@
 <?php
 
-$pixova_lite_section_title = get_theme_mod('pixova_lite_work_section_title', __('Recent works', 'pixova-lite') );
+$pixova_lite_section_title = get_theme_mod('pixova_lite_work_section_title', __('section-works.php', 'pixova-lite') );
 $pixova_lite_section_sub_title = get_theme_mod('pixova_lite_work_section_sub_title', __('Show and tell time', 'pixova-lite') );
 
 // Project #1
