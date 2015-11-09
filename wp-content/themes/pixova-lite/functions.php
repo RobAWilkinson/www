@@ -499,20 +499,8 @@ if( !function_exists('pixova_lite_fallback_cb') ) {
         $html .= '</li>';
 
         $html .= '<li class="menu-item menu-item-type-custom menu-item-object-custom">';
-            $html .= '<a href="' . get_site_url() . '/#testimonials" title="' . __('Testimonials', 'pixova-lite') . '">';
-                $html .= __('Testimonials', 'pixova-lite');
-            $html .= '</a>';
-        $html .= '</li>';
-
-        $html .= '<li class="menu-item menu-item-type-custom menu-item-object-custom">';
             $html .= '<a href="' . get_site_url() . '/#team" title="' . __('Team', 'pixova-lite') . '">';
                 $html .= __('Team', 'pixova-lite');
-            $html .= '</a>';
-        $html .= '</li>';
-
-        $html .= '<li class="menu-item menu-item-type-custom menu-item-object-custom">';
-            $html .= '<a href="' . get_site_url() . '/#news" title="' . __('News', 'pixova-lite') . '">';
-                $html .= __('News', 'pixova-lite');
             $html .= '</a>';
         $html .= '</li>';
 

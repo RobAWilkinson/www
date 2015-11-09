@@ -5,9 +5,8 @@ $pixova_lite_section__title = get_theme_mod('pixova_lite_contact_section_title',
 $pixova_lite_section__sub_title = get_theme_mod('pixova_lite_contact_section_sub_title', __('And we\'ll reply in no time', 'pixova-lite') );
 
 // section args
-$pixova_lite_contact_section_address = get_theme_mod('pixova_lite_address', __('Street 221B Baker Street, London, UK', 'pixova-lite') );
-$pixova_lite_contact_section_phone = get_theme_mod('pixova_lite_phone', '+444 974 525');
-$pixova_lite_contact_section_email = get_theme_mod('pixova_lite_email', 'office@machothemes.com');
+$pixova_lite_contact_section_address = get_theme_mod('pixova_lite_address', __('Los Angeles, CA', 'pixova-lite') );
+$pixova_lite_contact_section_email = get_theme_mod('pixova_lite_email', 'hello@naladigitalsolutions.com');
 $pixova_lite_contact_cf7_form = get_theme_mod('pixova_lite_contact_section_cf7', '');
 
 
@@ -32,8 +31,6 @@ echo '<section class="has-padding" id="contact">';
 				echo '</p>';
 
 				echo '<h3>'.__('Customer Support', 'pixova-lite').'</h3>';
-				echo '<p class="contact-info-details">'.__('Phone: ', 'pixova-lite').esc_html( $pixova_lite_contact_section_phone );
-					echo '<br />';
 					echo __('Email: ', 'pixova-lite').esc_html( $pixova_lite_contact_section_email );
 					echo '<br />';
 				echo '</p><!--/.contact-info-details-->';

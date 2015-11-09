@@ -1,9 +1,9 @@
 <?php
 
-$pixova_lite_main_cta_text = get_theme_mod('pixova_lite_intro_cta', __('Probably the BEST FREE WordPress theme of all times. Now with WooCommerce Support.', 'pixova-lite') );
-$pixova_lite_main_cta_sub_text = get_theme_mod('pixova_lite_intro_sub_cta', __('60fps smooth parallax header; Random header images (multiple images allowed here).', 'pixova-lite') );
+$pixova_lite_main_cta_text = get_theme_mod('pixova_lite_intro_cta', __('Nala Digital Solutions', 'pixova-lite') );
+$pixova_lite_main_cta_sub_text = get_theme_mod('pixova_lite_intro_sub_cta', __('Solving tomorrow\'s problems, today', 'pixova-lite') );
 $pixova_lite_main_cta_button_text = get_theme_mod('pixova_lite_intro_button_text', __('Explore Pixova.', 'pixova-lite') );
-$pixova_lite_main_cta_button_url = get_theme_mod('pixova_lite_intro_button_url', 'http://www.machothemes.com/themes/pixova-lite/');
+$pixova_lite_main_cta_button_url = get_theme_mod('pixova_lite_intro_button_url', '#about');
 
 $pixova_lite_what_we_do_1 = get_theme_mod('pixova_lite_intro_what_we_do_1_title', __('Web design', 'pixova-lite') );
 $pixova_lite_what_we_do_1_description = get_theme_mod('pixova_lite_intro_what_we_do_1_description', __('$pixova_lite_what_we_do_1_description', 'pixova-lite') );
