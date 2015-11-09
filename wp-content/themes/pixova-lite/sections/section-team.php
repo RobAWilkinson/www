@@ -7,21 +7,25 @@ $pixova_lite_section_sub_title = get_theme_mod('pixova_lite_team_section_sub_tit
 // Team member #1 
 $pixova_lite_team_member_1_name = get_theme_mod('pixova_lite_team_member_1_name', __('Travis Sorensen', 'pixova-lite') );
 $pixova_lite_team_member_1_image = get_theme_mod('pixova_lite_team_member_1_image', get_template_directory_uri() . '/layout/images/team/teammembru-150x150.jpg');
-$pixova_lite_team_member_1_twitter_url = get_theme_mod('pixova_lite_team_member_1_twitter', 'https://www.facebook.com/machothemes/');
+$pixova_lite_team_member_1_twitter_url = get_theme_mod('pixova_lite_team_member_1_twitter', 'https://www.twitter.com/');
 $pixova_lite_team_member_1_github_url = get_theme_mod('pixova_lite_team_member_1_github', 'https://www.github.com/tsorensen23');
-
+$pixova_lite_team_member_1_fburl = '';
+$pixova_lite_team_member_1_dribbble_url = '';
 // Team member #2 
-$pixova_lite_team_member_2_name = get_theme_mod('pixova_lite_team_member_1_name', __('Travis Sorensen', 'pixova-lite') );
+$pixova_lite_team_member_2_name = get_theme_mod('pixova_lite_team_member_1_name', __('Rob Wilkinson', 'pixova-lite') );
 $pixova_lite_team_member_2_image = get_theme_mod('pixova_lite_team_member_1_image', get_template_directory_uri() . '/layout/images/team/teammembru-150x150.jpg');
-$pixova_lite_team_member_2_twitter_url = get_theme_mod('pixova_lite_team_member_1_twitter', 'https://www.facebook.com/machothemes/');
-$pixova_lite_team_member_2_github_url = get_theme_mod('pixova_lite_team_member_1_github', 'https://www.github.com/tsorensen23');
-
+$pixova_lite_team_member_2_twitter_url = get_theme_mod('pixova_lite_team_member_1_twitter', 'https://www.twitter.com/robawilkinson/');
+$pixova_lite_team_member_2_github_url = get_theme_mod('pixova_lite_team_member_1_github', 'https://www.github.com/robawilkinson');
+$pixova_lite_team_member_2_fburl = '';
+$pixova_lite_team_member_2_dribbble_url = '';
 
 // Team member #3
-$pixova_lite_team_member_3_name = get_theme_mod('pixova_lite_team_member_1_name', __('Travis Sorensen', 'pixova-lite') );
+$pixova_lite_team_member_3_name = get_theme_mod('pixova_lite_team_member_1_name', __('Rouzbeh Sarrafieh', 'pixova-lite') );
 $pixova_lite_team_member_3_image = get_theme_mod('pixova_lite_team_member_1_image', get_template_directory_uri() . '/layout/images/team/teammembru-150x150.jpg');
-$pixova_lite_team_member_3_twitter_url = get_theme_mod('pixova_lite_team_member_1_twitter', 'https://www.facebook.com/machothemes/');
-$pixova_lite_team_member_3_github_url = get_theme_mod('pixova_lite_team_member_1_github', 'https://www.github.com/tsorensen23');
+$pixova_lite_team_member_3_twitter_url = get_theme_mod('pixova_lite_team_member_1_twitter', 'https://www.twitter.com/rouzbeh84/');
+$pixova_lite_team_member_3_github_url = get_theme_mod('pixova_lite_team_member_1_github', 'https://www.github.com/rouzbeh84');
+$pixova_lite_team_member_3_fburl = '';
+$pixova_lite_team_member_3_dribbble_url = '';
 
 
 echo '<section class="has-padding" id="team">';
@@ -47,7 +51,7 @@ echo '<section class="has-padding" id="team">';
 
             echo '<div class="mt-team-description">';
 
-            if ($pixova_lite_team_member_1_fburl !== '' || $pixova_lite_team_member_1_dribbble_url !== '') {
+        if ($pixova_lite_team_member_1_fburl !== '' || $pixova_lite_team_member_1_dribbble_url !== '' || $pixova_lite_team_member_1_github_url !== '' || $pixova_lite_team_member_1_twitter_url != '') {
 
                 echo '<div class="mt-team-member-icons">';
 
@@ -57,6 +61,11 @@ echo '<section class="has-padding" id="team">';
                     echo '</div><!--/.mt-team-member-icon-->';
                 }
 
+                if ($pixova_lite_team_member_1_twitter_url !== '') {
+                    echo '<div class="mt-team-member-icon">';
+                        echo '<a rel="nofollow" href="' . esc_url( $pixova_lite_team_member_1_twitter_url ). '"><i class="fa fa-twitter"></i></a>';
+                    echo '</div><!--/.mt-team-member-icon-->';
+                }
                 if ($pixova_lite_team_member_1_dribbble_url !== '') {
                     echo '<div class="mt-team-member-icon">';
                         echo '<a rel="nofollow" href="' . esc_url( $pixova_lite_team_member_1_dribbble_url ). '"><i class="fa fa-dribbble"></i></a>';
@@ -86,21 +95,31 @@ echo '<section class="has-padding" id="team">';
 
         echo '<div class="mt-team-description">';
 
-        if ($pixova_lite_team_member_2_fburl !== '' || $pixova_lite_team_member_2_dribbble_url !== '') {
+        if ($pixova_lite_team_member_2_fburl !== '' || $pixova_lite_team_member_2_dribbble_url !== '' || $pixova_lite_team_member_2_github_url !== '' || $pixova_lite_team_member_2_twitter_url != '') {
 
             echo '<div class="mt-team-member-icons">';
 
-            if ($pixova_lite_team_member_2_fburl !== '') {
-                echo '<div class="mt-team-member-icon">';
-                    echo '<a rel="nofollow" href="' . esc_url( $pixova_lite_team_member_2_fburl ). '"><i class="fa fa-facebook-official"></i></a>';
-                echo '</div><!--/.mt-team-member-icon-->';
-            }
+              if ($pixova_lite_team_member_2_fburl !== '') {
+                  echo '<div class="mt-team-member-icon">';
+                      echo '<a rel="nofollow" href="' . esc_url( $pixova_lite_team_member_2_fburl ). '"><i class="fa fa-facebook-official"></i></a>';
+                  echo '</div><!--/.mt-team-member-icon-->';
+              }
 
-            if ($pixova_lite_team_member_2_dribbble_url !== '') {
-                echo '<div class="mt-team-member-icon">';
-                    echo '<a rel="nofollow" href="' . esc_url( $pixova_lite_team_member_2_dribbble_url ). '"><i class="fa fa-dribbble"></i></a>';
-                echo '</div><!--/.mt-team-member-icon-->';
-            }
+              if ($pixova_lite_team_member_2_twitter_url !== '') {
+                  echo '<div class="mt-team-member-icon">';
+                      echo '<a rel="nofollow" href="' . esc_url( $pixova_lite_team_member_2_twitter_url ). '"><i class="fa fa-twitter"></i></a>';
+                  echo '</div><!--/.mt-team-member-icon-->';
+              }
+              if ($pixova_lite_team_member_2_dribbble_url !== '') {
+                  echo '<div class="mt-team-member-icon">';
+                      echo '<a rel="nofollow" href="' . esc_url( $pixova_lite_team_member_2_dribbble_url ). '"><i class="fa fa-dribbble"></i></a>';
+                  echo '</div><!--/.mt-team-member-icon-->';
+              }
+              if ($pixova_lite_team_member_2_github_url !== '') {
+                  echo '<div class="mt-team-member-icon">';
+                      echo '<a rel="nofollow" href="' . esc_url( $pixova_lite_team_member_2_github_url ). '"><i class="fa fa-github"></i></a>';
+                  echo '</div><!--/.mt-team-member-icon-->';
+              }
 
             echo '</div><!--/.mt-team-member-icons-->';
         }
@@ -119,21 +138,31 @@ echo '<section class="has-padding" id="team">';
 
         echo '<div class="mt-team-description">';
 
-        if ($pixova_lite_team_member_3_fburl !== '' || $pixova_lite_team_member_3_dribbble_url !== '') {
+        if ($pixova_lite_team_member_3_fburl !== '' || $pixova_lite_team_member_3_dribbble_url !== '' || $pixova_lite_team_member_3_github_url !== '' || $pixova_lite_team_member_3_twitter_url != '') {
 
             echo '<div class="mt-team-member-icons">';
 
-            if ($pixova_lite_team_member_3_fburl !== '') {
-                echo '<div class="mt-team-member-icon">';
-                echo '<a rel="nofollow" href="' . esc_url( $pixova_lite_team_member_3_fburl ). '"><i class="fa fa-facebook-official"></i></a>';
-                echo '</div><!--/.mt-team-member-icon-->';
-            }
+              if ($pixova_lite_team_member_3_fburl !== '') {
+                  echo '<div class="mt-team-member-icon">';
+                      echo '<a rel="nofollow" href="' . esc_url( $pixova_lite_team_member_3_fburl ). '"><i class="fa fa-facebook-official"></i></a>';
+                  echo '</div><!--/.mt-team-member-icon-->';
+              }
 
-            if ($pixova_lite_team_member_3_dribbble_url !== '') {
-                echo '<div class="mt-team-member-icon">';
-                echo '<a rel="nofollow" href="' . esc_url( $pixova_lite_team_member_3_dribbble_url ). '"><i class="fa fa-dribbble"></i></a>';
-                echo '</div><!--/.mt-team-member-icon-->';
-            }
+              if ($pixova_lite_team_member_3_twitter_url !== '') {
+                  echo '<div class="mt-team-member-icon">';
+                      echo '<a rel="nofollow" href="' . esc_url( $pixova_lite_team_member_3_twitter_url ). '"><i class="fa fa-twitter"></i></a>';
+                  echo '</div><!--/.mt-team-member-icon-->';
+              }
+              if ($pixova_lite_team_member_3_dribbble_url !== '') {
+                  echo '<div class="mt-team-member-icon">';
+                      echo '<a rel="nofollow" href="' . esc_url( $pixova_lite_team_member_3_dribbble_url ). '"><i class="fa fa-dribbble"></i></a>';
+                  echo '</div><!--/.mt-team-member-icon-->';
+              }
+              if ($pixova_lite_team_member_3_github_url !== '') {
+                  echo '<div class="mt-team-member-icon">';
+                      echo '<a rel="nofollow" href="' . esc_url( $pixova_lite_team_member_3_github_url ). '"><i class="fa fa-github"></i></a>';
+                  echo '</div><!--/.mt-team-member-icon-->';
+              }
 
             echo '</div><!--/.mt-team-member-icons-->';
         }
